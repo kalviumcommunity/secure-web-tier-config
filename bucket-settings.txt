@@ -1,0 +1,11 @@
+Bucket name:                    cloudnotes-attachments
+Location:                       us-central1
+Storage class:                  Standard
+Uniform bucket-level access:    Off
+
+Bucket members
+  Member:  allUsers
+  Role:    roles/storage.objectViewer
+
+Lifecycle rules
+  (none)

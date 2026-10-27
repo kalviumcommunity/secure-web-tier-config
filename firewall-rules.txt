@@ -1,0 +1,23 @@
+Network: cloudnotes-vpc
+Firewall rules (ingress)
+
+Rule 1
+  Name:           allow-web-http-https
+  Action:         Allow
+  Protocols:      tcp:80, tcp:443
+  Source ranges:  0.0.0.0/0
+  Target tags:    web
+
+Rule 2
+  Name:           allow-app-from-web
+  Action:         Allow
+  Protocols:      tcp:5000
+  Source tags:    web
+  Target tags:    app
+
+Rule 3
+  Name:           allow-db-postgres
+  Action:         Allow
+  Protocols:      tcp:5432
+  Source ranges:  0.0.0.0/0
+  Target tags:    db

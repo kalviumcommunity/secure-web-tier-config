@@ -1,0 +1,7 @@
+Project: cloudnotes-demo-project
+Service account: cloudnotes-app@cloudnotes-demo-project.iam.gserviceaccount.com
+
+Role bindings for cloudnotes-app
+  Binding 1
+    Role:   roles/owner
+    Scope:  Project cloudnotes-demo-project
